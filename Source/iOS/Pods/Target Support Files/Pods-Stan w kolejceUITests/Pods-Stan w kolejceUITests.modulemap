@@ -1,0 +1,6 @@
+framework module Pods_Stan_w_kolejceUITests {
+  umbrella header "Pods-Stan w kolejceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Stan w kolejce' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  
+  pod 'Socket.IO-Client-Swift', '~> 10.0.0' # Or latest version
+
+  # Pods for Stan w kolejce
+
+  target 'Stan w kolejceTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Stan w kolejceUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
