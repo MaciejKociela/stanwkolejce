@@ -1,1 +1,1 @@
-
+Katalog zawierający dokumentację projektu.
