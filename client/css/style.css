@@ -1,0 +1,317 @@
+.p{
+    font-family: Lato;
+    text-align:center;
+    width: 100%;
+    font-size: 30px;
+}
+
+.nr{
+    font-size:80px;
+}
+.fs30{
+    font-size: 20px;
+    color: gray;
+}
+.fs80{
+    font-size: 40px;
+    color: gray;
+}
+
+.kod{
+position:fixed;
+z-index: 1;
+    font-family: Lato;
+    top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align:center;
+    font-size: 30px;
+    cursor:pointer;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 25px;
+}
+.fs10{
+    font-size: 20px;
+    color: gray;
+}
+
+
+.btnn{ padding-left: 40px;
+    padding-right: 40px;
+    border:solid;
+    border-radius: 25px;
+    font-family: Lato;
+    position:fixed;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align:center;
+    font-size: 60px;
+    cursor:pointer;
+    padding: 10px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+
+.scr{
+    overflow-y: scroll;
+    height: 500px;
+}
+.logo{
+    z-index: 0;
+    
+    font-size: 30px;
+   font-family: 'Reef', sans-serif;
+    font-weight: 500;
+    background-color: #19B5FE;
+    color: white;
+    text-align: center;
+    top:0;
+    height:60px;
+    line-height: 50px;
+    left: 0;
+    width:100%;
+}
+
+
+.aa{
+    color:white;
+    text-decoration: none !important;
+}
+
+.h{
+     padding-left: 15px;
+    font-family: Lato;
+    font-size: 60px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.hh{
+    padding: 5px;
+    padding-left: 15px;
+    
+    font-family: Lato;
+    font-size: 20px;
+    border-bottom: solid;
+    border-color: gray;
+     border-width: 1px;
+}
+
+.info{
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: #3A539B;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.fs40{
+    font-size: 15px;
+    color: gray;
+    position: absolute;
+    right:15px;
+    margin-top: 5px;
+}
+
+.ng-hide.ng-hide-animate{
+     display: none !important;
+}
+
+input:active{
+    background-color: #F2F1EF; 
+}
+.h:active  { 
+    background-color: #F2F1EF;
+}
+
+.hh:active  { 
+    background-color: #F2F1EF;
+}
+
+
+input{
+     padding-left: 15px;
+    width:100%;
+    height: 60px;
+    font-size: 60px;
+}
+.wyd{
+    font-family: Lato;
+    font-size: 20px;
+}
+.inp{
+    font-family: Lato;
+    font-size: 20px;
+    height: 60px;
+    width:100%;
+}
+
+.inp2{
+    font-family: Lato;
+    font-size: 0px;
+    height:140px;
+    width:100%;
+}
+
+.space{
+    height: 15px;
+}
+
+.setin{
+    cursor: pointer;
+    font-size: 30px;
+    font-family: Lato;
+    letter-spacing: 0px;
+     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    left:5%;
+    width:90%;
+    
+    height:60px;
+    line-height: 50px;
+}
+
+.dodaj{
+    cursor: pointer;
+    font-size: 30px;
+    font-family: Lato;
+    letter-spacing: 0px;
+     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    left:5%;
+    width:90%;
+    
+    height:60px;
+    line-height: 55px;
+    z-index:3;
+    font-weight: 500;
+    position: absolute;
+    bottom: 5%;
+    
+}
+
+.dod{
+    font-weight: 500;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+     0%   {background-color: #19B5FE;}
+    25%  {background-color: #22A7F0;}
+    50%  {background-color: #446CB3;}
+    100% {background-color: #19B5FE;}
+}
+
+/* Standard syntax */
+@keyframes example {
+      0%   {background-color: #19B5FE;}
+    25%  {background-color: #22A7F0;}
+    50%  {background-color: #446CB3;}
+    100% {background-color: #19B5FE;}
+}
+
+
+/* Icon 1 */
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 30px;
+  height: 45px;
+  margin-top: 15px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.menu{
+    z-index: 3;
+    position:fixed;
+    right:5%;
+    top:0;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 9px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 9px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -30px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 9px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.del{
+    display: none;
+}

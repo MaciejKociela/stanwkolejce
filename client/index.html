@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app>
+   <head>
+      <title>Klient</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+     <link rel="stylesheet" type="text/css" src="Reef.ofc">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/client.js"></script>
+   </head>
+   <body>
+      <div  ng-controller="ChatController">
+          <div class="menu">
+              <div id="nav-icon1" ng-click="menu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+          </div>
+          <div class="info">
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+              
+               <a href="https://stanwkolejce-maciekkociela.c9users.io/add.html"><div class=" dodaj">dodaj kolejke</div></a>
+          </div>
+          <div ng-show="true" class="logo">
+             <a class="aa" href="https://stanwkolejce-maciekkociela.c9users.io/"> stań w kolejce</a>
+          </div>
+          <input class="wyd" ng-show="!inputHide2" type="text" placeholder="Kolejka.." ng-model="val2" ng-click="h2vis()" />
+       <div class="del">
+        
+        
+          
+          <div class="hh" ng-click="h2click(x)" ng-show="!h2hide" ng-repeat="x in stanowisko| filter : val2">{{x.name}} 
+          <span class="fs40">osob w kolejce:{{id[x.id]}}</span>
+          </div>
+         <div class="space"></div>
+         <div ng-show="!hid" ng-click = "setIn(queueId)" class="setin">&rarr; </div>
+         <div ng-show="!hidNbr" class="p">{{val2}}<br><br><span class="fs30">Jesteś<br></span><span class="nr" ng-show="(id-nbr)!=0">
+           {{id - nbr}}</span><span class="fs30"><br>w kolejce</span></div>
+         <div ng-show="!hidThanks" class="p">dzięki</div>
+         <div ng-show="!hidNbr" class="kod"><div class="fs10">kod<br> </div>{{code}}</div>
+      </div>
+      </div>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/angular.min.js"></script>
+   </body>
+</html>
