@@ -22,14 +22,14 @@
         $scope.h2hide = false;
          $(document).ready(function(){
             
-            $(".hh").slideDown();
+            $(".lineButton").slideDown();
             
             
         });
         
            $scope.h2click = function(val) {
         $(document).ready(function(){
-            $(".hh").slideUp();
+            $(".lineButton").slideUp();
              $(".nextCl").slideDown();
             
         });
@@ -66,15 +66,15 @@
 </head>
   <body>
     <div ng-controller="ShopController">
-      <div ng-show="true" class="logo">
-             <a class="aa" href="https://stanwkolejce-maciekkociela.c9users.io/"> dziekanat</a>
-          </div>
-     <input class="wyd" ng-show="!inputHide2" type="text" placeholder="Kolejka.." ng-model="val2" ng-click="h2vis()" />
-      <div class="hh" ng-click="h2click(x)" ng-show="!h2hide" ng-repeat="x in stanowisko">{{x.name}}</div>
+      <nav ng-show="true">
+             <a href="https://stanwkolejce-maciekkociela.c9users.io/"> dziekanat</a>
+      </nav>
+     <input class="lineInput" ng-show="!inputHide2" type="text" placeholder="Kolejka.." ng-model="val2" ng-click="h2vis()" />
+      <div class="lineButton" ng-click="h2click(x)" ng-show="!h2hide" ng-repeat="x in stanowisko">{{x.name}}</div>
       
       <div class="nextCl">
       <button class="setin" ng-click = "nextClient(queueId)">Kolejny klient</button>
-      <div class="p">{{code[queueId][nbr[queueId]+1]}}</div>
+      <div class="thanks">{{code[queueId][nbr[queueId]+1]}}</div>
       </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>

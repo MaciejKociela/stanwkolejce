@@ -28,12 +28,11 @@
 
      $scope.addQ = function addQ(data) {
          socket.emit('addQ', data);
-
      };
 
      $scope.setIn = function setIn(data) {
          $(document).ready(function() {
-             $(".wyd").slideUp();
+             $(".lineInput").slideUp();
              $(".setin").slideUp();
              $(".p").slideUp(2000);
          });
@@ -115,7 +114,7 @@
      $scope.h2vis = function() {
          $scope.h2hide = false;
          $(document).ready(function() {
-             $(".hh").slideDown();
+             $(".lineButton").slideDown();
 
 
          });
@@ -142,7 +141,7 @@
      $scope.h2click = function(val) {
          $(document).ready(function() {
              $(".setIn").slideDown();
-             $(".hh").slideUp();
+             $(".lineButton").slideUp();
 
          });
          $scope.val2 = val.name;
@@ -152,8 +151,8 @@
  }
 
  $(document).ready(function() {
-     $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function() {
+     $('#nav-icon').click(function() {
          $(this).toggleClass('open');
      });
-     $('.del').css("display", "block");
+     $('.lineList').css("display", "block");
  });

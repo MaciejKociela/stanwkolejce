@@ -1,4 +1,4 @@
-.p{
+.thanks{
     font-family: Lato;
     text-align:center;
     width: 100%;
@@ -8,10 +8,7 @@
 .nr{
     font-size:80px;
 }
-.fs30{
-    font-size: 20px;
-    color: gray;
-}
+
 .fs80{
     font-size: 40px;
     color: gray;
@@ -22,8 +19,8 @@ position:fixed;
 z-index: 1;
     font-family: Lato;
     top: 90%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
     text-align:center;
     font-size: 30px;
     cursor:pointer;
@@ -31,38 +28,12 @@ z-index: 1;
     padding-right: 40px;
     border-radius: 25px;
 }
-.fs10{
+.helpText{
     font-size: 20px;
     color: gray;
 }
 
-
-.btnn{ padding-left: 40px;
-    padding-right: 40px;
-    border:solid;
-    border-radius: 25px;
-    font-family: Lato;
-    position:fixed;
-    top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-    text-align:center;
-    font-size: 60px;
-    cursor:pointer;
-    padding: 10px;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-
-
-.scr{
-    overflow-y: scroll;
-    height: 500px;
-}
-.logo{
+nav{
     z-index: 0;
     
     font-size: 30px;
@@ -79,7 +50,7 @@ z-index: 1;
 }
 
 
-.aa{
+nav a{
     color:white;
     text-decoration: none !important;
 }
@@ -93,7 +64,7 @@ z-index: 1;
     border-color: gray;
 }
 
-.hh{
+.lineButton{
     padding: 5px;
     padding-left: 15px;
     
@@ -114,7 +85,7 @@ z-index: 1;
     top: 0;
     display: none;
 }
-.fs40{
+.lineCounter{
     font-size: 15px;
     color: gray;
     position: absolute;
@@ -144,7 +115,7 @@ input{
     height: 60px;
     font-size: 60px;
 }
-.wyd{
+.lineInput{
     font-family: Lato;
     font-size: 20px;
 }
@@ -186,6 +157,7 @@ input{
     
     height:60px;
     line-height: 50px;
+    margin-top: 15px;
 }
 
 .dodaj{
@@ -238,11 +210,14 @@ input{
 
 /* Icon 1 */
 
-#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+#nav-icon {
+     z-index: 3;
+    position:fixed;
+    right:5%;
+    top:0;
   width: 30px;
   height: 45px;
   margin-top: 15px;
-  position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -254,7 +229,9 @@ input{
   cursor: pointer;
 }
 
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+
+
+#nav-icon span {
   display: block;
   position: absolute;
   height: 5px;
@@ -273,26 +250,20 @@ input{
   transition: .25s ease-in-out;
 }
 
-.menu{
-    z-index: 3;
-    position:fixed;
-    right:5%;
-    top:0;
-}
 
-#nav-icon1 span:nth-child(1) {
+#nav-icon span:nth-child(1) {
   top: 0px;
 }
 
-#nav-icon1 span:nth-child(2) {
+#nav-icon span:nth-child(2) {
   top: 9px;
 }
 
-#nav-icon1 span:nth-child(3) {
+#nav-icon span:nth-child(3) {
   top: 18px;
 }
 
-#nav-icon1.open span:nth-child(1) {
+#nav-icon.open span:nth-child(1) {
   top: 9px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -300,18 +271,18 @@ input{
   transform: rotate(135deg);
 }
 
-#nav-icon1.open span:nth-child(2) {
+#nav-icon.open span:nth-child(2) {
   opacity: 0;
   left: -30px;
 }
 
-#nav-icon1.open span:nth-child(3) {
+#nav-icon.open span:nth-child(3) {
   top: 9px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-.del{
+.lineList{
     display: none;
 }
